@@ -1,79 +1,86 @@
 body {
     background-color: #A1A7E0;
-    /* width: auto;
-    height: auto; */
-    font-family: sans-serif;
+    width: auto;
+    height: auto; 
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
-    font-weight: 500;
-    margin: 0;
+    font-stretch: normal;
+    font-size: 20px;
+    
+        
+
+    
 }
 
 .mund {
     position: absolute;
-    width: 4em;
-    height: 1.5em;
+    width: 45px;
+    height: 18px;
     background: #fff;
     border-radius: 30%;
-    left: 55em;
-    top: 25em;
+    left: 840px;
+    top: 400px;
     border: 1px solid black;
+    
 }
 
 .octopus_head {
     position: absolute;
-    width: 25.82em;
-    height: 25.82em;
+    width: 280px;
+    height: 329px;
     background: #D9ADE1;
     border-radius: 0% 50% 50% 0;
-    left: 40em;
-    top: 10em;
-    padding: 0;
+    left: 650px;
+    top: 166.8px;
     border: 1px solid black;
     border-left: 0;
+    margin-right: 5px;
 }
 
 .eye {
     position: absolute;
-    width: 3em;
-    height: 3em;
+    width: 60px;
+    height: 60px;
     background: #fff;
     border-radius: 50%;
-    left: 54em;
-    top: 16em;
+    left: 840px;
+    top: 260px;
     border: 1px solid black;
 }
 
 .eye_down {
     position: absolute;
-    width: 1.5em;
-    height: 1.5em;
+    width: 40px;
+    height: 40px;
     background: #000;
-    opacity: 90%;
+    opacity: 70%;
     border-radius: 50%;
-    left: 55em;
-    top: 17.4em;
+    left: 855px;
+    top: 280px;
 }
 
 ol {
     position: absolute;
-    /* width: auto; */
+    width: 175px;
     list-style: none;
-    text-align: right;
-    font-size: 2.89em;
-    left: 9.4em;
-    top: 2.45em;
-    position: fixed;
+    text-align: right;    
+    left: 450px;
+    top: 147px;
+     
 }
 
 li {
-    font-size: 0.5em;
-    padding: 0.5em;
+        /* position: absolute; */
+        padding: 4.7%;  
+        max-block-size: 22.89px;
+        
+        
 }
 
 ol li:nth-child(1) {
     position: relative;
     background: linear-gradient(to right, #b195b6 90%, #8A6F8F 90%);
-    margin-left: -70%;
+    margin-left: -30%;
     border-radius: 20% 0% 0% 100%;
     border: 1px solid black;
     border-right: 0;
@@ -81,8 +88,8 @@ ol li:nth-child(1) {
 
 ol li:nth-child(2) {
     position: relative;
-    background: linear-gradient(to right, #b195b6 90%, #8A6F8F 90%);
-    margin-left: -80%;
+    background: linear-gradient(to right, #b195b6 95%, #8A6F8F 95%);
+    margin-left: -30%;
     border-radius: 20% 0% 0% 70%;
     border: 1px solid black;
     border-right: 0;
@@ -91,7 +98,7 @@ ol li:nth-child(2) {
 ol li:nth-child(3) {
     position: relative;
     background: linear-gradient(to right, #b195b6 95%, #8A6F8F 95%);
-    margin-left: -40%;
+    margin-left: -10%;
     border-radius: 20% 0% 0% 70%;
     border: 1px solid black;
     border-right: 0;
@@ -118,7 +125,7 @@ ol li:nth-child(5) {
 ol li:nth-child(6) {
     position: relative;
     background: linear-gradient(to right, #b195b6 65%, #8A6F8F 65%);
-    margin-left: -100%;
+    margin-left: -70%;
     border-radius: 20% 0% 0% 70%;
     border: 1px solid black;
     border-right: 0;
@@ -127,8 +134,8 @@ ol li:nth-child(6) {
 ol li:nth-child(7) {
     position: relative;
     background: linear-gradient(to right, #b195b6 70%, #8A6F8F 70%);
-    margin-left: -80%;
-    border-radius: 1000% 0% 0% 0%;
+    margin-left: -60%;
+    border-radius: 90% 0% 0% 90%;
     border: 1px solid black;
     border-right: 0;
 }
@@ -168,12 +175,12 @@ h2 {
     content: "";
     background: #b195b6;
     border-radius: 50%;
-    width: 1em;
-    height: 1em;
+    width: 25px;
+    height: 25px;
     position: absolute;
     display: inline-block;
-    left: 5.3em;
-    top: 0.1em;
+    left: 150px;
+    top: 5px;
     border: 1px solid black;
 }
 
@@ -181,18 +188,17 @@ h2 {
     content: "";
     background: #8A6F8F;
     border-radius: 50%;
-    width: 1em;
-    height: 1em;
+    width: 25px;
+    height: 25px;
     position: absolute;
     display: inline-block;
-    left: 4.1em;
-    top: 0.1em;
+    left: 110px;
+    top: 5px;
     border: 1px solid black;
 }
 
 .line {
     border-left: 2px dashed rgb(255, 8, 8);
-
     height: 510px;
     position: absolute;
     left: 150px;
@@ -201,7 +207,7 @@ h2 {
 
 .line::after {
     content: "100%";
-    font-size: 2em;
+    font-size: 35px;
     position: absolute;
     top: 430px;
     margin: 10px;
