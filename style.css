@@ -1,15 +1,11 @@
 body {
     background-color: #A1A7E0;
     width: auto;
-    height: auto; 
+    height: auto;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
     font-stretch: normal;
     font-size: 20px;
-    
-        
-
-    
 }
 
 .mund {
@@ -21,7 +17,6 @@ body {
     left: 840px;
     top: 400px;
     border: 1px solid black;
-    
 }
 
 .octopus_head {
@@ -63,18 +58,14 @@ ol {
     position: absolute;
     width: 175px;
     list-style: none;
-    text-align: right;    
+    text-align: right;
     left: 450px;
     top: 147px;
-     
 }
 
 li {
-        /* position: absolute; */
-        padding: 4.7%;  
-        max-block-size: 22.89px;
-        
-        
+    padding: 4.7%;
+    max-block-size: 22.89px;
 }
 
 ol li:nth-child(1) {
