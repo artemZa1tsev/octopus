@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
+</html>
 
 <head>
     <meta charset="UTF-8">
@@ -8,28 +10,73 @@
 </head>
 
 <body>
-    <h1>Осьминожка навыков</h1>
-    <h2> Автор - Зайцев Артём</h2>
-    <h2 class="now">сейчас</h2>
-    <h2 class="year">через год</h2>
-    <div class="octopus">
-        <div class="line"></div>
-        <div class="octopus_head"></div>
-        <div class="eye"></div>
-        <div class="eye_down"></div>
-        <div class="mund"></div>
-        <ol>
-            <li>Ruby</li>
-            <li>Ruby on Rails</li>
-            <li>Java script</li>
-            <li>React</li>
-            <li>English</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Play of piano</li>
-        </ol>
-
+    <div class="header">
+        <h1 class="header__skills">Осьминожка навыков</h1>
+        <h2 class="header__author"> Автор - Зайцев Артём</h2>
     </div>
+    <div class="octopus">
+        <div class="octopus__head"></div>
+        <div class="octopus__eye">
+            <div class="octopus__pupil"></div>
+        </div>
+        <div class="octopus__mouth"></div>
+        <ol class="octopus__skills">
+            <li class="octopus__ruby">Ruby
+                <span class="octopus__slills_invisible">
+                    - 10% сейчас изучено
+                    <p>Ruby - 50% через год</p>
+                </span>
+            </li>
+            <li class="octopus__rails">Ruby on Rails
+                <span class="octopus__slills_invisible">
+                    - 5% сейчас изучено
+                    <p>Ruby on Rails - 50% через год</p>
+                </span>
+            </li>
+            <li class="octopus__js">Java script
+                <span class="octopus__slills_invisible">
+                    - 3% сейчас изучено
+                    <p>Java script - 45% через год</p>
+                </span>
+            </li>
+            <li class="octopus__react">React
+                <span class="octopus__slills_invisible">
+                    - 4% сейчас изучено
+                    <p>React - 45% через год</p>
+                </span>
+            </li>
+            <li class="octopus__english">English
+                <span class="octopus__slills_invisible">
+                    - 20% сейчас изучено
+                    <p>English - 45% через год</p>
+                </span>
+            </li>
+            <li class="octopus__html">HTML
+                <span class="octopus__slills_invisible">
+                    - 35% сейчас изучено
+                    <p>HTML - 65% через год</p>
+                </span>
+            </li>
+            <li class="octopus__css">CSS
+                <span class="octopus__slills_invisible">
+                    - 30% сейчас изучено
+                    <p>CSS - 62% через год</p>
+                </span>
+            </li>
+            <li class="octopus__piano">Play of piano
+                <span class="octopus__slills_invisible">
+                    - 40% сейчас изучено
+                    <p>Play of piano - 70% через год</p>
+                </span>
+            </li>
+        </ol>
+    </div>
+    <div class="line"></div>
+    <div class="progress">
+        <h2 class="progress__now">сейчас <span>% изучено</span> </h2>
+        <h2 class="progress__year">через год <span>% изучено</span></h2>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
