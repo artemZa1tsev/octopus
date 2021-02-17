@@ -1,205 +1,249 @@
+@media only screen
+  and (min-device-width: 100px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body { 
+    position: absolute;
+    left: 500px;
+    top: 500px;
+    transform: rotate(90deg); 
+   
+}
+}
+
 body {
-    background-color: #A1A7E0;
     width: auto;
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
-    font-stretch: normal;
-    font-size: 20px;
+    background-color: #A1A7E0;  
 }
 
-.mund {
-    position: absolute;
-    width: 45px;
-    height: 18px;
-    background: #fff;
-    border-radius: 30%;
-    left: 840px;
-    top: 400px;
-    border: 1px solid black;
+.header {
+    margin: 20px;
+    font-size: 18px;
 }
 
-.octopus_head {
+.octopus__head {
     position: absolute;
-    width: 280px;
-    height: 329px;
-    background: #D9ADE1;
-    border-radius: 0% 50% 50% 0;
+    top: 162px;
     left: 650px;
-    top: 166.8px;
-    border: 1px solid black;
-    border-left: 0;
+    width: 280px;
+    height: 334px;
     margin-right: 5px;
+    background: #D9ADE1;
+    border: 1px solid black;
+    border-radius: 0% 50% 50% 0;
+    border-left: 0;  
 }
 
-.eye {
-    position: absolute;
+.octopus__eye {
+    position: relative;
+    top: 115px;
+    left: 830px;
     width: 60px;
     height: 60px;
-    background: #fff;
-    border-radius: 50%;
-    left: 840px;
-    top: 260px;
-    border: 1px solid black;
+    float: left;
+    background: #fff; 
+    border-radius: 100%;
+    border: 1px solid black;     
 }
 
-.eye_down {
+.octopus__pupil {
     position: absolute;
+    top: 10px; 
+    bottom: 10px;
+    left: 20px;
+    opacity: 70%;
     width: 40px;
     height: 40px;
     background: #000;
-    opacity: 70%;
-    border-radius: 50%;
-    left: 855px;
-    top: 280px;
+    border-radius: 100%;
 }
 
-ol {
+.octopus__pupil:hover {
+    transition:2s;
+    background: rgb(177, 2, 2);     
+} 
+
+.octopus__mouth {
     position: absolute;
+    top: 400px;
+    left: 840px;
+    width: 45px;
+    height: 18px;
+    background: #fff;
+    border: 1px solid black;
+    border-radius: 30%;  
+}
+
+.octopus__skills {
+    position: absolute;
+    top: 142px;
+    left: 450px;
     width: 175px;
     list-style: none;
     text-align: right;
-    left: 450px;
-    top: 147px;
-}
+    font-size: 20px;
+    line-height: 40px;
+    max-block-size: 22.89px; 
+} 
 
-li {
-    padding: 4.7%;
-    max-block-size: 22.89px;
-}
-
-ol li:nth-child(1) {
+.octopus__ruby {
     position: relative;
-    background: linear-gradient(to right, #b195b6 90%, #8A6F8F 90%);
     margin-left: -30%;
+    padding-right: 10px;
+    background: linear-gradient(to right, #b195b6 90%, #8A6F8F 90%);
     border-radius: 20% 0% 0% 100%;
     border: 1px solid black;
-    border-right: 0;
+    border-right: 0;   
 }
 
-ol li:nth-child(2) {
+.octopus__rails {
     position: relative;
-    background: linear-gradient(to right, #b195b6 95%, #8A6F8F 95%);
     margin-left: -30%;
-    border-radius: 20% 0% 0% 70%;
-    border: 1px solid black;
-    border-right: 0;
-}
-
-ol li:nth-child(3) {
-    position: relative;
+    padding-right: 10px;
     background: linear-gradient(to right, #b195b6 95%, #8A6F8F 95%);
-    margin-left: -10%;
     border-radius: 20% 0% 0% 70%;
     border: 1px solid black;
-    border-right: 0;
+    border-right: 0; 
 }
 
-ol li:nth-child(4) {
+.octopus__js {
     position: relative;
-    background: linear-gradient(to right, #b195b6 96%, #8A6F8F 96%);
+    margin-left: -10%;
+    padding-right: 10px;
+    background: linear-gradient(to right, #b195b6 95%, #8A6F8F 95%);
+    border-radius: 20% 0% 0% 70%;
+    border: 1px solid black;
+    border-right: 0; 
+}
+
+.octopus__react {
+    position: relative;
     margin-left: -13%;
+    padding-right: 10px;
+    background: linear-gradient(to right, #b195b6 96%, #8A6F8F 96%);
     border-radius: 100% 0% 0% 70%;
     border: 1px solid black;
-    border-right: 0;
+    border-right: 0;  
 }
 
-ol li:nth-child(5) {
+.octopus__english {
     position: relative;
-    background: linear-gradient(to right, #b195b6 80%, #8A6F8F 80%);
     margin-left: -13%;
+    padding-right: 10px;
+    background: linear-gradient(to right, #b195b6 80%, #8A6F8F 80%);
     border-radius: 80% 0% 0% 20%;
     border: 1px solid black;
-    border-right: 0;
+    border-right: 0;  
 }
 
-ol li:nth-child(6) {
+.octopus__html {
     position: relative;
-    background: linear-gradient(to right, #b195b6 65%, #8A6F8F 65%);
     margin-left: -70%;
+    padding-right: 10px;
+    background: linear-gradient(to right, #b195b6 65%, #8A6F8F 65%);
     border-radius: 20% 0% 0% 70%;
     border: 1px solid black;
-    border-right: 0;
+    border-right: 0; 
 }
 
-ol li:nth-child(7) {
+.octopus__css {
     position: relative;
-    background: linear-gradient(to right, #b195b6 70%, #8A6F8F 70%);
     margin-left: -60%;
+    padding-right: 10px;
+    background: linear-gradient(to right, #b195b6 70%, #8A6F8F 70%);
     border-radius: 90% 0% 0% 90%;
     border: 1px solid black;
-    border-right: 0;
+    border-right: 0; 
 }
 
-ol li:nth-child(8) {
+.octopus__piano {
     position: relative;
-    background: linear-gradient(to right, #b195b6 60%, #8A6F8F 60%);
     margin-left: -100%;
+    padding-right: 10px;
+    background: linear-gradient(to right, #b195b6 60%, #8A6F8F 60%);
     border-radius: 0% 0% 0% 100%;
     border: 1px solid black;
     border-right: 0;
 }
 
-h1 {
-    margin: 20px;
+.octopus__slills_invisible, span {
+    display: none;
 }
 
-h2 {
-    margin: 20px;
-}
-
-.now {
-    color: #ffffff;
+.progress__now {
     position: absolute;
     left: 480px;
     top: 630px;
+    color: #ffffff;
+    font-size: 27px;
 }
 
-.year {
-    color: #ffffff;
+.progress__year {
     position: absolute;
     left: 260px;
     top: 630px;
+    color: #ffffff;
+    font-size: 27px;
 }
 
-.year::after {
+.progress__year::after {
     content: "";
-    background: #b195b6;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
     position: absolute;
-    display: inline-block;
     left: 150px;
     top: 5px;
-    border: 1px solid black;
-}
-
-.now::after {
-    content: "";
-    background: #8A6F8F;
-    border-radius: 50%;
     width: 25px;
     height: 25px;
-    position: absolute;
     display: inline-block;
+    background: #b195b6;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.progress__now::after {
+    content: "";
+    position: absolute;
     left: 110px;
     top: 5px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: #8A6F8F;
     border: 1px solid black;
+    border-radius: 50%;    
 }
 
 .line {
-    border-left: 2px dashed rgb(255, 8, 8);
-    height: 510px;
     position: absolute;
     left: 150px;
-    top: 150px;
+    height: 510px;
+    border-left: 2px dashed rgb(255, 8, 8);
 }
 
 .line::after {
-    content: "100%";
-    font-size: 35px;
+    content: "100%" ;
     position: absolute;
-    top: 430px;
+    top: 420px;
     margin: 10px;
+    font-size: 35px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
