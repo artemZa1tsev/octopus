@@ -1,95 +1,73 @@
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-
-    .line {
-        position: absolute;
-        margin-left: 40px;
-        margin-top: 320px;
-    }
-
-    .octopus {
-        position: absolute;
-        top: 350px;
-    }
-
-    .header__skills {
-        position: relative;
-        left: 170px;
-        top: 200px;
-        text-align: left;
-        font-size: 400%;
-    }
-
-    .header__author {
-        position: relative;
-        left: 270px;
-        top: 210px;
-        font-size: 300%;
-    }
-
-    .progress__now {
-        position: absolute;
-        margin-left: 10px;
-
-    }
-
-    .progress {
-        position: relative;
-        top: 300px;
-        left: 20px;
-        width: 100%;
-        font-size: 130%;
-    }
+* 
+{
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    width: auto;
-    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
     background-color: #A1A7E0;
 }
 
 .header {
-    position: absolute;
-    margin: 19px;
-    font-size: 100%;
+    order: 0;
+    width: 100vw;
+    min-width: 350px;
+    max-width: 400px;
+    height: 100vh;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    background: #767CA4;
+    border-radius: 0 0 10px 0;
+     
+}
+
+.octopus {
+    display: flex;
+    flex-direction: row-reverse;
+    order: 3;
+    padding: 3px;
+    width: 60%;
+    min-width: 700px;
+    max-width: 700px;
+    height: 100%;
 }
 
 .octopus__head {
-    position: absolute;
-    top: 162px;
-    left: 650px;
-    width: 280px;
-    height: 334px;
-    margin-right: 5px;
+    position: relative;
+    width: 450px;
+    height: auto;
     background: #D9ADE1;
     border: 1px solid black;
-    border-radius: 0% 50% 50% 0;
+    border-radius: 0 50% 50% 0;
     border-left: 0;
 }
 
 .octopus__eye {
-    position: absolute;
-    top: 250px;
-    left: 830px;
-    width: 60px;
-    height: 60px;
-    float: left;
+    position: inherit;
+    top: 15%;
+    left: 60%;
+    width: 70px;
+    height: 70px;
     background: #fff;
     border-radius: 100%;
     border: 1px solid black;
 }
 
 .octopus__pupil {
-    position: absolute;
+    position: inherit;
+    width: 50px;
+    height: 50px;
     top: 10px;
-    bottom: 10px;
     left: 20px;
     opacity: 70%;
-    width: 40px;
-    height: 40px;
     background: #000;
-    border-radius: 100%;
+    border-radius: 100%; 
 }
 
 .octopus__pupil:hover {
@@ -98,106 +76,22 @@ body {
 }
 
 .octopus__mouth {
-    position: absolute;
-    top: 400px;
-    left: 840px;
-    width: 45px;
-    height: 18px;
+    position: inherit;
+    top: 65%;
+    left: 60%;
+    width: 60px;
+    height: 24px;
     background: #fff;
     border: 1px solid black;
     border-radius: 30%;
 }
 
 .octopus__skills {
-    position: absolute;
-    top: 142px;
-    left: 450px;
-    width: 175px;
+    width: 100%;
+    font-size: 25px;
+    line-height: 50px;
     list-style: none;
     text-align: right;
-    font-size: 20px;
-    line-height: 40px;
-    max-block-size: 22.89px;
-}
-
-.octopus__ruby {
-    position: relative;
-    margin-left: -30%;
-    padding-right: 10px;
-    background: linear-gradient(to right, #b195b6 90%, #8A6F8F 90%);
-    border-radius: 20% 0% 0% 100%;
-    border: 1px solid black;
-    border-right: 0;
-}
-
-.octopus__rails {
-    position: relative;
-    margin-left: -30%;
-    padding-right: 10px;
-    background: linear-gradient(to right, #b195b6 95%, #8A6F8F 95%);
-    border-radius: 20% 0% 0% 70%;
-    border: 1px solid black;
-    border-right: 0;
-}
-
-.octopus__js {
-    position: relative;
-    margin-left: -10%;
-    padding-right: 10px;
-    background: linear-gradient(to right, #b195b6 95%, #8A6F8F 95%);
-    border-radius: 20% 0% 0% 70%;
-    border: 1px solid black;
-    border-right: 0;
-}
-
-.octopus__react {
-    position: relative;
-    margin-left: -13%;
-    padding-right: 10px;
-    background: linear-gradient(to right, #b195b6 96%, #8A6F8F 96%);
-    border-radius: 100% 0% 0% 70%;
-    border: 1px solid black;
-    border-right: 0;
-}
-
-.octopus__english {
-    position: relative;
-    margin-left: -13%;
-    padding-right: 10px;
-    background: linear-gradient(to right, #b195b6 80%, #8A6F8F 80%);
-    border-radius: 80% 0% 0% 20%;
-    border: 1px solid black;
-    border-right: 0;
-}
-
-.octopus__html {
-    position: relative;
-    margin-left: -70%;
-    padding-right: 10px;
-    background: linear-gradient(to right, #b195b6 65%, #8A6F8F 65%);
-    border-radius: 20% 0% 0% 70%;
-    border: 1px solid black;
-    border-right: 0;
-}
-
-.octopus__css {
-    position: relative;
-    margin-left: -60%;
-    padding-right: 10px;
-    background: linear-gradient(to right, #b195b6 70%, #8A6F8F 70%);
-    border-radius: 90% 0% 0% 90%;
-    border: 1px solid black;
-    border-right: 0;
-}
-
-.octopus__piano {
-    position: relative;
-    margin-left: -100%;
-    padding-right: 10px;
-    background: linear-gradient(to right, #b195b6 60%, #8A6F8F 60%);
-    border-radius: 0% 0% 0% 100%;
-    border: 1px solid black;
-    border-right: 0;
 }
 
 .octopus__slills_invisible,
@@ -205,62 +99,155 @@ span {
     display: none;
 }
 
-.progress__now {
-    position: absolute;
-    left: 550px;
-    top: 630px;
-    color: #ffffff;
-    font-size: 170%;
-}
-
-.progress__year {
-    position: absolute;
-    left: 260px;
-    top: 630px;
-    color: #ffffff;
-    font-size: 170%;
-}
-
-.progress__year::after {
-    content: "";
-    position: absolute;
-    left: 150px;
-    top: 5px;
-    width: 25px;
-    height: 25px;
-    margin-left: 15%;
-    display: inline-block;
-    background: #b195b6;
+.octopus__ruby {
+    padding-right: 2%;
+    border-radius: 20% 0% 0% 100%;
     border: 1px solid black;
-    border-radius: 50%;
+    border-right: 0;
+}
+
+.octopus__rails {
+    padding-right: 2%;
+    border-radius: 20% 0% 0% 70%;
+    border: 1px solid black;
+    border-right: 0;
+}
+
+.octopus__js {
+    padding-right: 2%;
+    border-radius: 20% 0% 0% 70%;
+    border: 1px solid black;
+    border-right: 0;
+}
+
+.octopus__react {
+    padding-right: 2%;
+    border-radius: 100% 0% 0% 70%;
+    border: 1px solid black;
+    border-right: 0;
+}
+
+.octopus__english {
+    padding-right: 2%;
+    border-radius: 80% 0% 0% 20%;
+    border: 1px solid black;
+    border-right: 0;
+}
+
+.octopus__html {
+    padding-right: 2%;
+    border-radius: 20% 0% 0% 70%;
+    border: 1px solid black;
+    border-right: 0;
+}
+
+.octopus__css {
+    padding-right: 2%;
+    border-radius: 90% 0% 0% 90%;
+    border: 1px solid black;
+    border-right: 0;
+}
+
+.octopus__piano {
+    padding-right: 2%;
+    border-radius: 0% 0% 0% 100%;
+    border: 1px solid black;
+    border-right: 0;
+}
+
+.progress {
+    order: 4;
+    width: 22%;
+    max-width: 400px;
+    min-width: 300px;
+    margin-top: 40%;
+    margin-left: 12%;
+    font-size: 23px;
+    line-height: 50px;
 }
 
 .progress__now::after {
     content: "";
-    position: absolute;
-    left: 110px;
-    top: 5px;
+    display: inline-block;
     width: 25px;
     height: 25px;
-    margin-left: 15%;
-    display: inline-block;
+    margin-left: 16.8%;
     background: #8A6F8F;
     border: 1px solid black;
     border-radius: 50%;
 }
 
+.progress__year::after {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 2%;
+    margin-top: 10px;
+    background: #b195b6;
+    border: 1px solid black;
+    border-radius: 50%;
+} 
+
 .line {
-    position: absolute;
-    left: 150px;
-    height: 400px;
-    top: 150px;
-    border-left: 2px dashed rgb(255, 8, 8);
+    order: 2; 
+    width: 0%;
+    height: auto; 
+    margin-left: 10px;
+    align-self: stretch;
+    border-left: 6px dashed rgb(255, 255, 255); 
 }
 
 .line::after {
     content: "100%";
-    position: absolute;
-    top: 400px;
-    margin: 10px;
-    font-size: 35px;
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+body {
+    flex-wrap: wrap;
+}
+
+.header {
+    order: 0;
+    max-width: 100%;
+    height: 400px;
+    border-radius: 0;  
+}
+
+.header__skills {
+    margin-top: 10%;
+}
+
+.line {
+    order: 1;
+    width: 2%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 10%; 
+}
+
+.octopus {
+    order: 2;
+    margin-top: 10%;  
+}
+
+.octopus__head {
+    width: 250px;
+    height: auto;
+}
+
+.octopus__skills {
+    width: 500px;
+    font-size: 28px;
+    line-height: 50px;
+}
+
+.progress {
+    margin: 0;
+    margin-left: 35%;
+    margin-top: 5%;
+}
 }
