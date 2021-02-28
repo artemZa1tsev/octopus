@@ -1,69 +1,78 @@
 <!DOCTYPE html>
 <html>
-
-</html>
-
 <head>
     <meta charset="UTF-8">
     <title>Octopus</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/octopus/css/style.css">
 </head>
-
 <body>
     <div class="header">
         <h1 class="header__skills">Осьминожка навыков</h1>
         <h2 class="header__author"> Автор - Зайцев Артём</h2>
+            <div class="progress">
+                <h2 class="progress__now">Cейчас <span>% изучено</span> </h2>
+                <h2 class="progress__year">Через год <span>% изучено</span></h2>
+            </div>
     </div>
     <div class="octopus">
-        <div class="octopus__head"></div>
-        <div class="octopus__eye">
-            <div class="octopus__pupil"></div>
+        <div class="octopus__head"> 
+            <div class="octopus__mouth"></div>
+            <div class="octopus__eye">
+                <div class="octopus__pupil"></div>
+           </div>
         </div>
-        <div class="octopus__mouth"></div>
         <ol class="octopus__skills">
-            <li class="octopus__ruby">Ruby
+            <li class="octopus__ruby"
+            style="margin-left: 50%; background: linear-gradient(to left, #8A6F8F 10%, #b195b6 10%);">Ruby
                 <span class="octopus__slills_invisible">
                     - 10% сейчас изучено
                     <p>Ruby - 50% через год</p>
                 </span>
-            </li>
-            <li class="octopus__rails">Ruby on Rails
+            </li> 
+            <li class="octopus__rails"
+                style="margin-left: 55%; background: linear-gradient(to left, #8A6F8F 5%, #b195b6 5%);">Ruby on Rails
                 <span class="octopus__slills_invisible">
                     - 5% сейчас изучено
                     <p>Ruby on Rails - 50% через год</p>
                 </span>
             </li>
-            <li class="octopus__js">Java script
+            <li class="octopus__js"
+                style="margin-left: 60%; background: linear-gradient(to left, #8A6F8F 5%, #b195b6 5%);">Java script
                 <span class="octopus__slills_invisible">
                     - 3% сейчас изучено
                     <p>Java script - 45% через год</p>
                 </span>
             </li>
-            <li class="octopus__react">React
+            <li class="octopus__react"
+                style="margin-left: 70%; background: linear-gradient(to left, #8A6F8F 4%, #b195b6 4%);">React
                 <span class="octopus__slills_invisible">
                     - 4% сейчас изучено
                     <p>React - 45% через год</p>
                 </span>
             </li>
-            <li class="octopus__english">English
+            <li class="octopus__english"
+                style="margin-left: 50%; background: linear-gradient(to left, #8A6F8F 20%, #b195b6 20%);">English
                 <span class="octopus__slills_invisible">
                     - 20% сейчас изучено
                     <p>English - 45% через год</p>
                 </span>
             </li>
-            <li class="octopus__html">HTML
+            <li class="octopus__html"
+                style="margin-left: 30%; background: linear-gradient(to left, #8A6F8F 35%, #b195b6 35%);">HTML
                 <span class="octopus__slills_invisible">
                     - 35% сейчас изучено
                     <p>HTML - 65% через год</p>
                 </span>
             </li>
-            <li class="octopus__css">CSS
+            <li class="octopus__css"
+                style="margin-left: 30%; background: linear-gradient(to left, #8A6F8F 40%, #b195b6 40%);">CSS
                 <span class="octopus__slills_invisible">
                     - 30% сейчас изучено
                     <p>CSS - 62% через год</p>
                 </span>
             </li>
-            <li class="octopus__piano">Play of piano
+            <li class="octopus__piano"
+                style="margin-left: 30%; background: linear-gradient(to left, #8A6F8F 40%, #b195b6 40%);">Play of piano
                 <span class="octopus__slills_invisible">
                     - 40% сейчас изучено
                     <p>Play of piano - 70% через год</p>
@@ -72,11 +81,7 @@
         </ol>
     </div>
     <div class="line"></div>
-    <div class="progress">
-        <h2 class="progress__now">сейчас <span>% изучено</span> </h2>
-        <h2 class="progress__year">через год <span>% изучено</span></h2>
-    </div>
+   
     <script src="script.js"></script>
 </body>
-
 </html>
